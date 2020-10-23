@@ -143,9 +143,7 @@ export const query = graphql`
                         project_hero_image
                         project_description
                         myimages{
-                            fields{
-                                img
-                              }
+                            img
                         }
                         _meta {
                             uid
