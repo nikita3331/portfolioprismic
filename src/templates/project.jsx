@@ -51,6 +51,7 @@ const WorkLink = styled(Link)`
 
 
 const Project = ({ project, meta }) => {
+    console.log(project.myimages)
     return (
         <>
             <Helmet
@@ -101,6 +102,9 @@ const Project = ({ project, meta }) => {
                     </ProjectHeroContainer>
                 )}
                 <ProjectBody>
+                    <ProjectHeroContainer>
+                        <img src={project.project_hero_image.url} alt="bees" />
+                    </ProjectHeroContainer>
                     {RichText.render(project.project_description)}
                     <WorkLink to={"/work"}>
                         <Button className="Button--secondary">
@@ -138,6 +142,7 @@ export const query = graphql`
                         project_post_date
                         project_hero_image
                         project_description
+                        myimages
                         _meta {
                             uid
                         }
