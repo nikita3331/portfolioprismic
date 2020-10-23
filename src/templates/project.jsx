@@ -142,7 +142,9 @@ export const query = graphql`
                         project_post_date
                         project_hero_image
                         project_description
-                        myimages
+                        myimages{
+                            img
+                        }
                         _meta {
                             uid
                         }
