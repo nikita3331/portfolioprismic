@@ -144,7 +144,7 @@ export const query = graphql`
                         project_description
                         myimages{
                             img{
-                                link
+                                url
                             }
                         }
                         _meta {
