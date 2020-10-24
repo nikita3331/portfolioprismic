@@ -51,7 +51,6 @@ const WorkLink = styled(Link)`
 
 
 const Project = ({ project, meta }) => {
-    console.log(project.myimages)
     return (
         <>
             <Helmet
@@ -105,7 +104,7 @@ const Project = ({ project, meta }) => {
                     <ProjectHeroContainer>
                         <img src={project.project_hero_image.url} alt="bees" />
                     </ProjectHeroContainer>
-                    {this.project.myimages.map((item,index),()=>{
+                    {project.myimages.map((item,index),()=>{
                         return(
                             <ProjectHeroContainer>
                                 <img src={item.url} alt="bees" />
