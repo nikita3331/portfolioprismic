@@ -148,23 +148,6 @@ export const query = graphql`
                             ... on _ExternalLink{
                               url
                             }
-                            ... on PRISMIC__FileLink{
-                              name
-                              url
-                              size 
-                            }
-                          }page_link{
-                            __typename
-                            ... on PRISMIC__ExternalLink{
-                              url
-                            }
-                            ... on Page{
-                              title
-                              description
-                              _meta{
-                                uid
-                              }
-                            }
                           }
                         }
                         _meta {
