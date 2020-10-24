@@ -151,7 +151,7 @@ export const query = graphql`
                             ... on _FileLink{
                               name
                               url
-                              size
+                              size 
                             }
                             ... on Page{
                               title
