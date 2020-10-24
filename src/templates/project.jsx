@@ -144,8 +144,40 @@ export const query = graphql`
                         project_description
                         myimages{
                             img{
-                                url
+                            __typename
+                            ... on _ExternalLink{
+                              url
                             }
+                            ... on _FileLink{
+                              name
+                              url
+                              size
+                            }
+                            ... on Page{
+                              title
+                              description
+                              _meta{
+                                uid
+                              }
+                            }
+                          }page_link{
+                            __typename
+                            ... on _ExternalLink{
+                              url
+                            }
+                            ... on _FileLink{
+                              name
+                              url
+                              size
+                            }
+                            ... on Page{
+                              title
+                              description
+                              _meta{
+                                uid
+                              }
+                            }
+                          }
                         }
                         _meta {
                             uid
