@@ -145,7 +145,7 @@ export const query = graphql`
                         myimages{
                             img{
                             __typename
-                            ... on _ExternalLink{
+                            ... on PRISMIC__ExternalLink{
                               url
                             }
                           }
