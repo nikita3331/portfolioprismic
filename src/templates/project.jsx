@@ -104,9 +104,9 @@ const Project = ({ project, meta }) => {
                     <ProjectHeroContainer>
                         <img src={project.project_hero_image.url} alt="bees" />
                     </ProjectHeroContainer>
-                    {project.myimages.map((item,index),()=>{
+                    {project.myimages.map((item,index)=>{
                         return(
-                            <ProjectHeroContainer>
+                            <ProjectHeroContainer key={index}>
                                 <img src={item.url} alt="bees" />
                             </ProjectHeroContainer>
                         ) 
