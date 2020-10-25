@@ -20,7 +20,7 @@ const ProjectHeroContainer = styled("div")`
 
     img {
         max-width: 600px;
-    }
+    } 
 `
 
 const ProjectTitle = styled("div") `
