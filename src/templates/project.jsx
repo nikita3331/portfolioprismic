@@ -105,6 +105,7 @@ const Project = ({ project, meta }) => {
                         <img src={project.project_hero_image.url} alt="bees" />
                     </ProjectHeroContainer>
                     {project.myimages.map((item,index)=>{
+                        console.log(item)
                         return(
                             <ProjectHeroContainer key={index}>
                                 <img src={item.url} alt="bees" />
@@ -112,9 +113,6 @@ const Project = ({ project, meta }) => {
                         ) 
                     })}
                     
-                    <ProjectHeroContainer>
-                        <img src={project.myimages.url} alt="bees" />
-                    </ProjectHeroContainer>
                     {RichText.render(project.project_description)}
                     <WorkLink to={"/work"}>
                         <Button className="Button--secondary">
