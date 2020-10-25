@@ -101,14 +101,11 @@ const Project = ({ project, meta }) => {
                     </ProjectHeroContainer>
                 )}
                 <ProjectBody>
-                    <ProjectHeroContainer>
-                        <img src={project.project_hero_image.url} alt="bees" />
-                    </ProjectHeroContainer>
                     {project.myimages.map((item,index)=>{
                         console.log(item)
                         return(
                             <ProjectHeroContainer key={index}>
-                                <img src={item.url} alt="bees" />
+                                <img src={item.img.url} alt="bees" />
                             </ProjectHeroContainer>
                         ) 
                     })}
