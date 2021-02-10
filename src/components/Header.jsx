@@ -67,7 +67,7 @@ const HeaderLinks = styled("div")`
             &:after {
                 background: ${colors.blue500};
                 transition: 100ms ease-in-out background;
-            }
+            } 
         }
     }
 `
